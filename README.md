@@ -1,8 +1,8 @@
-- 👋 Hi, I’m @indranilroy99
+- 👋 Hi, I’m @indranil99
 - 👀 I’m interested in cybersecurity 
-- 🌱 I’m currently learning about different programming languages as well as cybersecurity 
+- 🌱 I’m currently learning about cybersecurity and various networking concepts and ways to protect the network
 - 💞️ I’m looking to collaborate on cybersecurity projects
-- 📫 You can ping me in my email(neilrye99@gmail.com)
+
 
 <!---
 indranilroy99/indranilroy99 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
