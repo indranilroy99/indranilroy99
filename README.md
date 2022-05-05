@@ -1,7 +1,10 @@
-- 👋 Hi, I’m @indranil99
-- 👀 I’m interested in cybersecurity 
-- 🌱 I’m currently learning about cybersecurity and various networking concepts and ways to protect the network
-- 💞️ I’m looking to collaborate on cybersecurity projects
+- 👋 Hi, I’m indranil
+- I am a Network security Associate and also a cybersecurity enthusiast
+- i have been working and also learning on various  cybesecurity tools ,techinques, policies,etc to defend any system or organisation from malicious attacksers.  
+-  I’m looking forward  to collaborate on cybersecurity projects.
+-
+-  Thankyou <3
+-
 
 
 <!---
