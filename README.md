@@ -1,10 +1,4 @@
 <h1 align="center">Hi 👋, I'm Indranil</h1>
-<h3 align="center">Cybersecurity Researcher</h3>
-
-<p align="left"> <a href="https://twitter.com/neilr9800" target="blank"><img src="https://img.shields.io/twitter/follow/neilr9800?logo=twitter&style=for-the-badge" alt="neilr9800" /></a> </p>
-
-- 📫 How to reach me **vo1d@duck.com**
-
 <h3 align="left">Connect with me:</h3>
 <p align="left">
 <a href="https://twitter.com/neilr9800" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="neilr9800" height="30" width="40" /></a>
