@@ -1,17 +1,10 @@
-<p align="center">
-  <img src="https://raw.githubusercontent.com/abhisheknaiidu/awesome-github-profile-readme/master/assets/matrix.svg" width="100%" />
-</p>
-
-<h1 align="center">Hi 👋, I'm Indranil</h1>
+<h1 align="center">Hi, I'm Indranil</h1>
 
 <p align="center">
-Security Engineer with hands-on experience across security operations, incident response, and threat investigations, with a strong interest in red teaming and malware analysis. I focus on understanding attacker behavior, validating detections, and improving how teams detect, respond, and learn from real-world incidents.
+An average security engineer exploring red teaming, adversary behavior, malware analysis, defensive security strategies and random security stuffs.
 </p>
 
-<h3 align="center">Let’s connect</h3>
-<p align="center">
-Paranoid about security? Let’s connect.
-</p>
+<h3 align="center">Wanna talk security ?Let’s connect</h3>
 
 <p align="center">
 <a href="https://linkedin.com/in/YOUR_LINKEDIN" target="blank">
