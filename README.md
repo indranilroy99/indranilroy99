@@ -4,7 +4,7 @@
 An average security engineer exploring red teaming, adversary behavior, malware analysis, defensive security strategies and random security stuffs.
 </p>
 
-<h3 align="center">Wanna talk security ?Let’s connect</h3>
+<h3 align="center">Wanna talk security ? Let’s connect</h3>
 
 <p align="center">
 <a href="https://linkedin.com/in/YOUR_LINKEDIN" target="blank">
