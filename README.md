@@ -1,7 +1,7 @@
 <h1 align="center">Hi, I'm Indranil</h1>
 
 <p align="center">
-An average security engineer exploring red teaming, adversary behavior, malware analysis, defensive security strategies and random security stuffs.
+Analyzing adversary behavior and malware to build better defensive strategies. Turning red team tactics into proactive threat hunting and detection engineering.
 </p>
 
 <h3 align="center">Wanna talk security ? Let’s connect</h3>
