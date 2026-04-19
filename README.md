@@ -1,74 +1,64 @@
-![banner](banner.svg)
+```
+1010101010101010101010101010101010101010101010101010
+1010101010101010101010101010101010101010101010101010
+1010101010101010101010101010101010101010101010101010
+1010101011111111111111111111111111111110101010101010
+1010101011111111111111111111111111111110101010101010
+1010101011110101010101010101010101011110101010101010
+1010101011110101010101010101010101011110101010101010
+1010101011110101011111111111111101011110101010101010
+1010101011110101011111111111111101011110101010101010
+1010101011110101010101010101010101011110101010101010
+1010101011110101010101010101010101011110101010101010
+1010101011111111111111111111111111111110101010101010
+1010101011111111111111111111111111111110101010101010
+1010101010101010101010101010101010101010101010101010
+1010101010101010101010101010101010101010101010101010
+1010101010101010101010101010101010101010101010101010
 
----
-
-```text
-       =[ Indranil_SecOps v1.x.x      ]
-+ -- --=[ [1] Detection engineering   ]
-+ -- --=[ [2] Purple Teaming          ]
-+ -- --=[ [3] Malware Analysis       ]
-+ -- --=[ [4] Cloud Security         ]
-+ -- --=[ [5] Incident Response      ]
-+ -- --=[ [6] AI Security            ]
-
+[SYSTEM_INIT]: Hi, I'm Indranil
+[STATUS]: Security Operations | Detection Engineering
+[LOCATION]: Digital Lab
+```
 
 ```
----
-
-## ⚔️ Operational Capabilities
-
-| Domain | Proficiency | Status |
-|--------|-------------|--------|
-| 🔴 Red Teaming | Intermediate | Active |
-| 🛡️ Security Operations | Advanced | Active |
-| 🚨 Incident Response | Advanced | Active |
-| 🦠 Malware Analysis | Intermediate | Active |
-| 🔍 Penetration Testing | Intermediate | Active |
-| ⚡ Exploitation | Intermediate | Active |
-
----
-
-## 🔧 Tech Arsenal
-
-```yaml
-Detection & Response:
-  Primary: SentinelOne Query Language (S1QL)
-  SIEM: ELK Stack, Splunk
-  Rules: SIGMA, YARA, Custom Logic
-  EDR/XDR: SentinelOne, Microsoft Defender
-
-Threat Hunting:
-  Frameworks: MITRE ATT&CK, Cyber Kill Chain
-  Tools: Velociraptor, osquery, Wireshark
-  Query Languages: KQL, SPL, S1QL
-
-Malware Analysis:
-  Static: Ghidra, Radare2
-  Dynamic: ANY.RUN, Cuckoo Sandbox
-  Reverse: IDA Pro, x64dbg
-  
-Cloud & IAM:
-  AWS: EC2, S3, IAM, Lambda, CloudTrail
-  Tools: Prowler, ScoutSuite, Cloudsploit
-  Techniques: Reconnaissance, Exploitation, Persistence
-
-Automation & Development:
-  Languages: Python, Bash, Go, PowerShell
-  Frameworks: Custom detection pipelines
-  Infrastructure: Docker, Git
-
+48656C6C6F20637572696F7573206861636B65722C0A77656C
+636F6D6520746F206D79206469676974616C206C61622E0A
 ```
 
 ---
 
-## 🔍 Active Investigations
+```
+       =[ Indranil_SecOps v1.x.x-stable                ]
++ -- --=[ 42 detections  - 18 hunting_queries         ]
++ -- --=[ 127 malware_reports - 9 incident_reports    ]
++ -- --=[ 15 evasion_scripts                          ]
+       Inspired by Metasploit Framework
+```
 
-- **detection-engineering** — S1QL native queries, SIGMA rules, YARA signatures
-- **malware-analysis** — Sample triage, behavioral analysis, IOC extraction
-- **cloud-security** — AWS attack patterns, IAM exploitation, defense strategies
-- **incident-response** — Forensic automation, timeline reconstruction, case studies
-- **purple-team-ops** — Detection evasion validation, C2 simulation, bypass techniques
-- **ai-security** — LLM attack surface mapping, prompt injection, model fingerprinting
+---
+
+## 🎯 Operational Capabilities
+
+| Skill | Proficiency | Progress |
+|-------|-------------|----------|
+| Red Teaming | Intermediate | ████████░░ 80% |
+| Security Operations | Advanced | ██████████ 100% |
+| Incident Response | Advanced | ██████████ 100% |
+| Malware Analysis | Intermediate | ████████░░ 80% |
+| Penetration Testing | Intermediate | ███████░░░ 70% |
+| Exploitation | Intermediate | ███████░░░ 70% |
+
+---
+
+## 🔧 Tech Stack
+
+![SentinelOne](https://img.shields.io/badge/SentinelOne-S1QL-brightgreen?style=for-the-badge&labelColor=1a1a1a)
+![Python](https://img.shields.io/badge/Python-Automation-brightgreen?style=for-the-badge&labelColor=1a1a1a)
+![XDR](https://img.shields.io/badge/XDR-Endpoint-brightgreen?style=for-the-badge&labelColor=1a1a1a)
+![SIGMA](https://img.shields.io/badge/SIGMA-Detection-brightgreen?style=for-the-badge&labelColor=1a1a1a)
+![YARA](https://img.shields.io/badge/YARA-Malware-brightgreen?style=for-the-badge&labelColor=1a1a1a)
+![AWS](https://img.shields.io/badge/AWS-Cloud-brightgreen?style=for-the-badge&labelColor=1a1a1a)
 
 ---
 
@@ -76,21 +66,9 @@ Automation & Development:
 
 | Metric | Count |
 |--------|-------|
-| Detection Rules | ![](https://img.shields.io/badge/dynamic/json?url=https://raw.githubusercontent.com/indranilroy99/.github/main/metrics.json&label=—&query=$.detection_rules&color=00FF00&style=flat&labelColor=000000) |
-| Malware Analyzed | ![](https://img.shields.io/badge/dynamic/json?url=https://raw.githubusercontent.com/indranilroy99/.github/main/metrics.json&label=—&query=$.malware_samples&color=00FF00&style=flat&labelColor=000000) |
-| Incidents | ![](https://img.shields.io/badge/dynamic/json?url=https://raw.githubusercontent.com/indranilroy99/.github/main/metrics.json&label=—&query=$.incident_reports&color=00FF00&style=flat&labelColor=000000) |
-| Threat Intel | ![](https://img.shields.io/badge/dynamic/json?url=https://raw.githubusercontent.com/indranilroy99/.github/main/metrics.json&label=—&query=$.threat_intel&color=00FF00&style=flat&labelColor=000000) |
-
----
-
-## ⚡ Operating Notes
-
-Detection rules built in **SentinelOne Query Language (S1QL)** → converted to **SIGMA/YARA** for cross-platform deployment. Research driven by observed threat actor behavior and MITRE ATT&CK frameworks.
-
-```
-[*] All artifacts are for authorized defensive purposes only.
-[*] Validated against real-world threat intelligence.
-[*] Updated continuously based on emerging TTPs.
-```
+| Detection Rules | ![](https://img.shields.io/badge/dynamic/json?url=https://raw.githubusercontent.com/indranilroy99/.github/main/metrics.json&label=—&query=$.detection_rules&color=00FF00&style=flat&labelColor=1a1a1a) |
+| Malware Analyzed | ![](https://img.shields.io/badge/dynamic/json?url=https://raw.githubusercontent.com/indranilroy99/.github/main/metrics.json&label=—&query=$.malware_samples&color=00FF00&style=flat&labelColor=1a1a1a) |
+| Incident Reports | ![](https://img.shields.io/badge/dynamic/json?url=https://raw.githubusercontent.com/indranilroy99/.github/main/metrics.json&label=—&query=$.incident_reports&color=00FF00&style=flat&labelColor=1a1a1a) |
+| Threat Intel | ![](https://img.shields.io/badge/dynamic/json?url=https://raw.githubusercontent.com/indranilroy99/.github/main/metrics.json&label=—&query=$.threat_intel&color=00FF00&style=flat&labelColor=1a1a1a) |
 
 ---
