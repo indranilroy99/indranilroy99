@@ -1,216 +1,193 @@
+# Indranil | vo1d
+
 ```
 48 65 6c 6c 6f 20 63 75 72 69 6f 75 73 20 68 61 63 6b 65 72 2c 0a
 77 65 6c 63 6f 6d 65 20 74 6f 20 6d 79 20 64 69 67 69 74 61 6c 20 6c 61 62 2e
 ```
 
----
+Detection engineer, malware analyst, red team operator. Building defensive capabilities around adversary behavior.
 
-<h1 align="center">Indranil | Security Operations & Threat Intelligence</h1>
-
-<p align="center">
-  <strong>Detection Engineer | Red Team Analyst | Malware Researcher</strong><br>
-  Building resilient defenses through adversary-centric threat hunting and operational security.
-</p>
-
-<p align="center">
-  <a href="https://linkedin.com/in/indranil-roy" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
-  </a>
-  <a href="https://x.com/vo1dx0?s=21" target="_blank">
-    <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=x&logoColor=white" />
-  </a>
-  <a href="mailto:your-email@example.com" target="_blank">
-    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
-  </a>
-</p>
+[LinkedIn](https://linkedin.com/in/indranil-roy) • [Twitter](https://x.com/vo1dx0)
 
 ---
 
-## 🎯 Live Telemetry: Security Operations
+## Live Metrics
 
-| Metric | Count |
+| Metric | Value |
 |--------|-------|
-| ![Detection Rules](https://img.shields.io/badge/Detection%20Rules-42-2ea44f?style=flat-square) | SIGMA/Yara Signatures |
-| ![Malware Samples](https://img.shields.io/badge/Malware%20Samples%20Analyzed-127-yellow?style=flat-square) | APT/Commodity Threats |
-| ![Incidents Handled](https://img.shields.io/badge/Incidents%20Handled-18-red?style=flat-square) | IR Case Studies |
-| ![Threat Intel Reports](https://img.shields.io/badge/Threat%20Reports-9-blue?style=flat-square) | TTPs & IOCs |
+| Detection Rules (SIGMA/YARA) | ![](https://img.shields.io/badge/dynamic/json?url=https://raw.githubusercontent.com/indranilroy99/.github/main/metrics.json&label=Rules&query=$.detection_rules&color=2ea44f) |
+| Malware Samples Analyzed | ![](https://img.shields.io/badge/dynamic/json?url=https://raw.githubusercontent.com/indranilroy99/.github/main/metrics.json&label=Samples&query=$.malware_samples&color=yellow) |
+| Incident Reports | ![](https://img.shields.io/badge/dynamic/json?url=https://raw.githubusercontent.com/indranilroy99/.github/main/metrics.json&label=IRs&query=$.incident_reports&color=blue) |
+| Threat Intel Artifacts | ![](https://img.shields.io/badge/dynamic/json?url=https://raw.githubusercontent.com/indranilroy99/.github/main/metrics.json&label=TI&query=$.threat_intel&color=orange) |
 
-<details>
-<summary><b>📊 How to maintain these metrics</b></summary>
+---
 
-Create a file `.github/metrics.json` in your repo:
+## Skills
 
-```json
-{
-  "detection_rules": 42,
-  "malware_samples": 127,
-  "incidents_handled": 18,
-  "threat_reports": 9
-}
-```
+| Domain | Experience | Primary Tools |
+|--------|------------|----------------|
+| **Purple Teaming** | Advanced | C2 evasion, detection validation, adversary simulation |
+| **Security Operations** | Advanced | SIEM (Splunk/ELK), endpoint monitoring, log analysis |
+| **Detection Engineering** | Expert | SIGMA/YARA rules, KQL, SPL, detection logic |
+| **AI Security** | Intermediate | LLM safety, prompt injection testing, model reconnaissance |
+| **Incident Response** | Advanced | Timeline analysis, forensics, containment, post-mortems |
+| **Malware Analysis** | Expert | Static/dynamic analysis, reverse engineering, behavioral profiling |
 
-Then reference these values in your README using Shields.io dynamic badges:
-```
-https://img.shields.io/badge/Detection%20Rules-{YOUR_COUNT}-2ea44f
-```
+---
 
-For **automated updates**, use GitHub Actions to pull data from your projects:
+## Working On
+
+- **detection-engineering** — Production SIGMA and YARA signatures
+- **malware-analysis** — Sample triage, behavioral analysis, write-ups
+- **security-operations** — Threat hunting queries and detection strategies
+- **purple-team-ops** — Detection evasion and validation tools
+- **ai-security** — LLM attack surface mapping and mitigations
+- **incident-response** — Case studies and forensic automation
+
+---
+
+## Setup
+
+How to automatically track your metrics:
+
+### 1. Create `.github/workflows/update-metrics.yml`
 
 ```yaml
 name: Update Metrics
+
 on:
   schedule:
     - cron: '0 0 * * *'
   workflow_dispatch:
+  push:
+    paths:
+      - '**.sigma'
+      - '**.yara'
+      - 'detection-engineering/**'
+      - 'malware-analysis/**'
+      - 'incident-response/**'
 
 jobs:
   update:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - run: |
-          python scripts/update_metrics.py
-          git config user.name "GitHub Actions"
-          git config user.email "actions@github.com"
-          git add .
-          git commit -m "chore: update live metrics" || exit 0
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Count artifacts
+        run: |
+          mkdir -p /tmp/metrics
+          
+          # Count SIGMA rules
+          SIGMA_RULES=$(find detection-engineering -name "*.sigma" -o -name "*.yml" | grep -i sigma | wc -l)
+          
+          # Count YARA rules
+          YARA_RULES=$(find detection-engineering -name "*.yara" -o -name "*.yar" | wc -l)
+          
+          # Count malware samples analyzed
+          MALWARE_SAMPLES=$(find malware-analysis -name "*.md" -o -name "analysis-*.txt" | wc -l)
+          
+          # Count incident reports
+          INCIDENT_REPORTS=$(find incident-response -name "*.md" -o -name "ir-*.txt" | wc -l)
+          
+          # Count threat intel artifacts
+          THREAT_INTEL=$(find . -path ./.git -prune -o -name "*ioc*" -o -name "*indicators*" | grep -v ".git" | wc -l)
+          
+          TOTAL_RULES=$((SIGMA_RULES + YARA_RULES))
+          
+          cat > /tmp/metrics.json << EOF
+          {
+            "detection_rules": $TOTAL_RULES,
+            "sigma_rules": $SIGMA_RULES,
+            "yara_rules": $YARA_RULES,
+            "malware_samples": $MALWARE_SAMPLES,
+            "incident_reports": $INCIDENT_REPORTS,
+            "threat_intel": $THREAT_INTEL,
+            "updated_at": "$(date -u +'%Y-%m-%dT%H:%M:%SZ')"
+          }
+          EOF
+          
+          cat /tmp/metrics.json
+
+      - name: Push metrics
+        run: |
+          mkdir -p .github
+          cp /tmp/metrics.json .github/metrics.json
+          
+          git config user.name "Metrics Bot"
+          git config user.email "metrics@github.com"
+          git add .github/metrics.json
+          git commit -m "chore: update live metrics" || true
           git push
+
 ```
 
-</details>
+### 2. Create `.github/metrics.json` (initial)
+
+```json
+{
+  "detection_rules": 0,
+  "sigma_rules": 0,
+  "yara_rules": 0,
+  "malware_samples": 0,
+  "incident_reports": 0,
+  "threat_intel": 0,
+  "updated_at": "2026-04-19T00:00:00Z"
+}
+```
+
+### 3. Repo Structure
+
+Organize your work so it auto-counts:
+
+```
+detection-engineering/
+├── sigma-rules/
+│   ├── web-attacks.sigma
+│   ├── c2-communication.sigma
+│   └── credential-access.sigma
+├── yara-rules/
+│   ├── ransomware-family.yara
+│   └── infostealer.yara
+└── README.md
+
+malware-analysis/
+├── APT28-backdoor-analysis.md
+├── Emotet-behavioral-study.md
+└── samples/
+    └── iocs-identified.txt
+
+incident-response/
+├── IR-2025-001-ransomware.md
+├── IR-2025-002-lateral-movement.md
+└── playbooks/
+
+security-operations/
+├── threat-hunting-kql/
+├── detection-strategies/
+└── siem-dashboards/
+
+purple-team-ops/
+├── detection-evasion-tests/
+├── adversary-simulation-plans/
+└── validation-reports/
+
+ai-security/
+├── llm-attack-surface/
+├── prompt-injection-tests/
+└── research/
+```
+
+### 4. Update the metrics.json reference in README
+
+The badges pull from `.github/metrics.json` automatically. Just push code matching the directory structure, and the workflow updates metrics daily.
 
 ---
 
-## 🛡️ Operational Skills Matrix
+## Contact
 
-```
-                     Red Teaming
-                         ▲
-                        /█\
-                       / █ \
-                      /  █  \
-                     /████████\
-        Exploitation ◄────████────► Penetration Testing
-                     \████████/
-                      \  █  /
-                       \ █ /
-                        \█/
-                         ▼
-                  Incident Response
-                  
-    Malware Analysis: ████████░░ 85%
-    Security Ops:    ███████░░░  75%
-```
+For detection reviews, threat intel collaboration, or incident response discussions:
 
-| Domain | Proficiency | Tools & Frameworks |
-|--------|-------------|-------------------|
-| **Red Teaming** | Expert | Cobalt Strike, Metasploit, Impacket, PowerShell Empire |
-| **Penetration Testing** | Expert | Burp Suite, Nessus, Qualys, Custom Exploit Dev |
-| **Incident Response** | Advanced | Velociraptor, osquery, YARA, Splunk, ELK |
-| **Malware Analysis** | Expert | Ghidra, IDA Pro, x64dbg, Wireshark, ANY.RUN |
-| **Security Ops** | Advanced | SIEM (Splunk/ELK), EDR (CrowdStrike/Sentinel One), SOAR |
-| **Threat Hunting** | Expert | KQL, SPL, YARA, SIGMA Rules, Custom Scripts |
-
----
-
-## 🔧 Tech Stack & Arsenal
-
-```yaml
-Languages:
-  - Python (automation, tooling, malware analysis)
-  - Bash/Zsh (incident response, data processing)
-  - PowerShell (Windows forensics, C2 post-exploitation)
-  - Go (high-performance tools, detection engineering)
-
-Security Platforms:
-  - SIEM: Splunk, ELK Stack, Azure Sentinel
-  - EDR: CrowdStrike Falcon, Microsoft Defender, Velociraptor
-  - Threat Intelligence: MISP, Shodan, AlienVault OTX
-  - Reverse Engineering: Ghidra, IDA Pro, Binary Ninja
-
-Detection Engineering:
-  - YARA Rules (malware signatures)
-  - SIGMA Rules (generic SIEM detection)
-  - KQL / SPL (detection queries)
-  - Custom detection pipelines
-
-Infrastructure:
-  - Docker, Kubernetes (lab environments)
-  - Terraform (IaC for threat labs)
-  - Git (version control for detections & IOCs)
-```
-
----
-
-## 📚 Current Research & Projects
-
-### Featured Repositories
-
-```
-├── detection-engineering/
-│   ├── sigma-rules/          Advanced detection logic for APT campaigns
-│   ├── yara-signatures/      Malware family identification rules
-│   └── threat-hunting-kql/   Azure Sentinel hunting queries
-│
-├── incident-response/
-│   ├── forensic-timeline/    Windows event log correlation
-│   ├── memory-analysis/      Volatility3 scripts for RAM analysis
-│   └── malware-triage/       Rapid response playbooks
-│
-└── threat-intelligence/
-    ├── apt-profiles/        Adversary TTPs & IOC databases
-    ├── c2-indicators/       C2 infrastructure tracking
-    └── phishing-analysis/   Email-based attack patterns
-```
-
-<details>
-<summary><b>📖 View detailed project descriptions</b></summary>
-
-- **detection-engineering**: Production-ready SIGMA and YARA rules battle-tested against live incident data
-- **incident-response**: Automated IR toolchain for rapid triage and containment
-- **threat-intelligence**: Structured adversary profiles with MITRE ATT&CK mappings
-
-</details>
-
----
-
-## 🎓 Threat Hunting Playbooks
-
-| Threat Actor | TTPs | Detection Focus |
-|--------------|------|-----------------|
-| APT28 | T1566 (Phishing), T1059 (Execution) | Email gateways, Process creation logs |
-| Lazarus | T1190 (Exploit), T1486 (Encryption) | Web app logs, File system monitoring |
-| FIN7 | T1078 (Cred Access), T1110 (Brute Force) | Authentication logs, MFA bypass indicators |
-| Wizard Spider | T1657 (Persistence), T1009 (Data Staging) | Registry monitoring, Exfil patterns |
-
----
-
-## 💭 Philosophy
-
-> "Defense isn't about knowing every attack—it's about understanding every attacker's constraints, resources, and objectives. Turn that intel into friction."
-
-**My Approach:**
-- **Adversary-Centric**: Map defenses to real threat actor TTPs, not fear-mongering
-- **Detection-First**: Every incident is a blind spot; every blind spot becomes a detection rule
-- **Operational Reality**: Solutions that work at 3 AM during an active breach, not just in presentations
-- **Continuous Iteration**: Threat landscape shifts weekly; detection strategy shifts monthly
-
----
-
-## 🚀 Let's Connect
-
-Security is a team sport. Whether you're:
-- **Hunting threats** and need collaborative intel
-- **Building detections** and want to review rules
-- **Responding to incidents** and need an extra set of eyes
-- **Researching TTPs** and want to compare notes
-
-📧 Reach out via [LinkedIn](https://linkedin.com/in/indranil-roy) or [@vo1dx0](https://x.com/vo1dx0)
-
----
-
-<p align="center">
-  <i>"The attacker only needs to find one hole. The defender must protect them all."</i><br>
-  Last updated: 2026-04-19
-</p>
-```
+- LinkedIn: [indranil-roy](https://linkedin.com/in/indranil-roy)
+- Twitter: [@vo1dx0](https://x.com/vo1dx0)
