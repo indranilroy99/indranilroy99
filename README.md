@@ -13,9 +13,12 @@
 
 | Skill | Proficiency | Progress |
 |-------|-------------|----------|
-| Red Teaming | Intermediate | ████████░░ 80% |
+| Purple Teaming | Intermediate | ████████░░ 80% |
 | Security Operations | Advanced | ██████████ 100% |
+| Cloud Security | Intermediate | ████████░░ 80% |
 | Incident Response | Advanced | ██████████ 100% |
+| Detection Engineering | Intermediate | ████████░░ 80% |
+| AI Security | Intermediate | ████████░░ 80% |
 | Malware Analysis | Intermediate | ████████░░ 80% |
 | Penetration Testing | Intermediate | ███████░░░ 70% |
 | Exploitation | Intermediate | ███████░░░ 70% |
