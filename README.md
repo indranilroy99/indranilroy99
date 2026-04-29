@@ -1,7 +1,7 @@
 ```
 [SYSTEM_INIT]: Hi, I'm Indranil
 
-       =[ vo1d v9.9.9-stable                           ]
+       =[ vo1d v9.9.9-beta                             ]
 + -- --=[ 50+ detections  - 30+ hunting_queries         ]
 + -- --=[ 12+ malware_reports - 20+ incident_reports    ]
 + -- --=[ 10+ evasion_scripts                          ]
