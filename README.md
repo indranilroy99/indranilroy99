@@ -1,19 +1,3 @@
-<div align="center">
-
-```
-        ██╗  ██╗██╗    ▁▂▃▅▇  waving from the SOC  ▇▅▃▂▁
-        ██║  ██║██║
-        ███████║██║    I watch how attackers move.
-        ██╔══██║██║    Then I teach machines to catch them.
-        ██║  ██║██║
-        ╚═╝  ╚═╝╚═╝    ── indranil · detection engineer ──
-```
-
-`detection engineering` · `agentic SOC` · `threat intel` · `purple teaming`
-
-</div>
-
----
 
 ### whoami
 
