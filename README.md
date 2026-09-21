@@ -8,7 +8,7 @@ My work lives at the seam where **detection engineering**, **threat intelligence
 ```console
 $ cat /etc/indranil.conf
 
-focus     detection engineering · agentic SOC · threat intel
+focus     detection engineering · agentic SOC · threat intel · cloud security 
 day-job   SOC ops · incident response · purple teaming · cloud & fraud defense
 shipping  agents that triage, hunt, and respond — no human in the loop
 writing   adversary tradecraft & detection research @ vo1dlabs.com
