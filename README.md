@@ -8,10 +8,12 @@
 
 Here's some of my recent writing that you might like reading:
 
+<!-- BLOG:START -->
 - [How to Actually Read AWS CloudTrail](https://systemweakness.com/how-to-actually-read-aws-cloudtrail-f2b3d64a7736)
+- [Intro to System Binary Proxies](https://systemweakness.com/intro-to-system-binary-proxies-9909e8b886e6)
 - [Exploiting AWS EC2 IMDSv2 Metadata Through RCE and SSRF](https://systemweakness.com/exploiting-aws-ec2-imdsv2-metadata-through-rce-and-ssrf-93bc5d215c3e)
 - [Users Lie. Databases Don’t: Querying Browser History During Incident Response](https://osintteam.blog/users-lie-databases-dont-querying-browser-history-during-incident-response-c308793d8c6d)
-- [Intro to System Binary Proxies](https://systemweakness.com/intro-to-system-binary-proxies-9909e8b886e6)
+- [Bypassing Zscaler — How to Navigate the Web Unseen](https://systemweakness.com/bypassing-zscaler-how-to-navigate-the-web-unseen-aaac3edcb0e2)
+<!-- BLOG:END -->
 
 There is more on [Medium](https://indranilroy9.medium.com).
-
