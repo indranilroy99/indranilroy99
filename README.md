@@ -26,19 +26,6 @@ writing   adversary tradecraft & detection research @ vo1dlabs.com
 
 **Open-source tooling** — most of what I build ships publicly: MCP servers that feed threat intel to AI agents, security scanners for agentic repos, Slack-native SOC agents, training labs, and detection-translation engines. Pinned below.
 
----
-
-### stack
-
-```text
-detection    MITRE ATT&CK · Sigma · S1QL / KQL · SentinelOne · Wazuh · Suricata · Snort
-threat intel MISP · FS-ISAC · IOC pipelines · enrichment
-platforms    SIEM · EDR / XDR · SOAR · AWS security
-building     Python · TypeScript · Node · MCP · multi-agent AI
-offense      purple teaming · adversary emulation · malware & red-team tradecraft
-```
-
----
 
 ### elsewhere
 
@@ -59,8 +46,4 @@ offense      purple teaming · adversary emulation · malware & red-team tradecr
 
 ---
 
-<div align="center">
 
-> *Turn red-team tactics into proactive hunting. Turn hunting into detections. Turn detections into agents that never sleep.*
-
-</div>
