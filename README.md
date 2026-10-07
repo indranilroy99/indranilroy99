@@ -14,17 +14,7 @@ shipping  agents that triage, hunt, and respond — no human in the loop
 writing   adversary tradecraft & detection research @ vo1dlabs.com
 ```
 
----
 
-### what I build
-
-**Agentic SOC** — multi-agent systems that triage alerts, run hunts, and drive response end to end. Built to cut analyst noise, not manufacture more of it.
-
-**Detection engineering** — rules mapped to MITRE ATT&CK and tuned for signal, not volume. Coverage up, false positives down, alert fatigue gone.
-
-**Threat intelligence** — pipelines that turn raw indicators into live detections, with MISP wired into the tools analysts and agents actually reach for.
-
-**Open-source tooling** — most of what I build ships publicly: MCP servers that feed threat intel to AI agents, security scanners for agentic repos, Slack-native SOC agents, training labs, and detection-translation engines. Pinned below.
 
 
 ### elsewhere
