@@ -4,7 +4,6 @@
 - My work lives at the seam where **detection engineering**, **threat intelligence**, and **agentic security operations** meet — a SOC that runs itself instead of drowning its analysts.
 - Ask me about detection engineering, threat intel, cloud security, incident response, or purple teaming.
 - How to reach me: [LinkedIn](https://linkedin.com/in/vo1d).
-- Here are my projects: [misp-mcp](https://github.com/indranilroy99/misp-mcp) (MISP threat intel for any MCP client), [agentcsp](https://github.com/indranilroy99/agentcsp) (static security analysis for AI agent repos), and [EvilCorp-Vulnerable-Web-App](https://github.com/indranilroy99/EvilCorp-Vulnerable-Web-App) (a deliberately vulnerable app for labs). I also keep [vo1dlabs.com](https://vo1dlabs.com).
 
 Here's some of my recent writing that you might like reading:
 
