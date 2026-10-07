@@ -22,7 +22,7 @@ writing   adversary tradecraft & detection research @ vo1dlabs.com
 <table>
 <tr>
 <td><b>writing</b></td>
-<td><a href="https://indranilroy9.medium.com">indranilroy9.medium.com</a> — detection engineering, threat hunting, adversary behavior</td>
+<td><a href="https://indranilroy9.medium.com">indranilroy9.medium.com</a> — detection engineering, cloud Security, agentic SOC, threat hunting, adversary behavior</td>
 </tr>
 <tr>
 <td><b>lab</b></td>
