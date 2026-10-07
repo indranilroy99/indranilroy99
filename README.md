@@ -34,6 +34,5 @@ writing   adversary tradecraft & detection research @ vo1dlabs.com
 </tr>
 </table>
 
----
 
 
